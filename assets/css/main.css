@@ -2443,3 +2443,7 @@ input, select, textarea {
 					}
 
 	}
+
+h1 {
+    line-height: 1.4;
+}
