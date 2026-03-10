@@ -9,27 +9,304 @@
 
 <body>
 
-<nav id="nav">
-<ul class="container">
-<li><a href="index.html">Heim</a></li>
-<li><a href="verkefni2.html">Verkefni 2</a></li>
-<li><a href="verkefni3.html">Verkefni 3</a></li>
-<li><a href="lokaverkefni.html">Lokaverkefni</a></li>
-</ul>
-</nav>
+  <!-- Nav -->
+  <nav id="nav">
+    <ul class="container">
+      <li><a href="index.html">Heim</a></li>
+      <li><a href="index.html#about">Um mig</a></li>
+      <li><a href="index.html#cv">Ferilskrá</a></li>
+      <li><a href="index.html#process">Verkefni 1</a></li>
+      <li><a href="verkefni2.html">Verkefni 2</a></li>
+      <li><a href="verkefni3.html">Verkefni 3</a></li>
+      <li><a href="lokaverkefni.html">Lokaverkefni</a></li>
+      <li><a href="index.html#github">GitHub</a></li>
+      <li><a href="index.html#sources">Heimildir</a></li>
+    </ul>
+  </nav>
 
 <article class="wrapper style2">
 <div class="container">
 
 <header>
-<h1>Verkefni 3</h1>
-<p>Hér mun ég skrásetja vinnuferlið fyrir verkefni 3.</p>
-</header>
+<h2>Verkefni 3 – 3D prentun og 3D skönnun</h2>
 
 <p>
-Hér kemur lýsing á verkefninu, myndir og vinnuferli.
+Í þessu verkefni vann ég með bæði 3D prentun og 3D skönnun. Markmiðið var
+að hanna hlut sem ekki væri hægt að framleiða með frádráttar framleiðslu
+(subtractive manufacturing) heldur aðeins með 3D prentun (additive manufacturing).
+Auk þess framkvæmdi ég prófanir á 3D prentara til að skilja betur takmarkanir
+og hönnunarreglur áður en lokahluturinn var prentaður.
 </p>
 
+<p>
+Hluturinn sem ég ákvað að hanna var símastandur sem heldur símanum í hallandi
+stöðu á skrifborði. Einnig framkvæmdi ég 3D skönnun á hlut sem kallast
+pill splitter og er notaður til að skipta lyfjatöflum í minni hluta.
+</p>
+</header>
+
+
+<section class="box style1">
+
+<h3>Hugmynd og hönnun</h3>
+
+<p>
+Upphaflega hafði ég hugsað mér að hanna símastand í verkefni 2, en áttaði mig
+fljótt á því að slík hönnun hentar mun betur fyrir 3D prentun. Með 3D prentun
+er hægt að búa til flóknari form og hallandi yfirborð sem væri erfiðara að
+framleiða með öðrum framleiðsluaðferðum.
+</p>
+
+<p>
+Því ákvað ég að þróa einfaldan símastand sem heldur símanum uppréttum á
+skrifborði. Hallinn gerir notandanum kleift að horfa á skjáinn án þess að
+þurfa að halda á símanum, til dæmis þegar horft er á myndbönd eða fylgst er
+með tilkynningum.
+</p>
+
+<span class="image fit">
+<img src="images/3D Model.png" alt="">
+</span>
+
+<p>3D módel af símastandinum.</p>
+
+</section>
+
+
+<section class="box style1">
+
+<h3>Additive vs Subtractive framleiðsla</h3>
+
+<p>
+3D prentun er dæmi um additive framleiðslu þar sem hlutur er byggður upp
+lag fyrir lag með því að bæta efni við. Þetta gerir kleift að framleiða
+flóknari form, innri holrými og yfirhang sem erfitt eða ómögulegt væri
+að framleiða með hefðbundnum aðferðum.
+</p>
+
+<p>
+Frádráttar framleiðsla (subtractive manufacturing) virkar hins vegar þannig
+að efni er fjarlægt úr stærra efnisstykki, til dæmis með fræsingu eða borun.
+Slíkar aðferðir eiga erfiðara með að framleiða flókin form eða innri
+holrými án þess að skipta hlutnum upp í fleiri einingar.
+</p>
+
+<p>
+Símastandurinn sem ég hannaði inniheldur hallandi yfirborð og form sem
+henta sérstaklega vel fyrir 3D prentun og væri mun erfiðara að framleiða
+með frádráttar framleiðslu.
+</p>
+
+</section>
+
+
+<section class="box style1">
+
+<h3>Prófanir og hönnunarreglur</h3>
+
+<p>
+Áður en lokahluturinn var prentaður framkvæmdi ég nokkrar prófanir
+til að skilja betur takmarkanir 3D prentarans. Með prófunum var
+hægt að meta hluti eins og yfirhang (overhang) og veggþykkt.
+</p>
+
+<p>
+Overhang prófið hjálpaði til við að sjá við hvaða hallahorn
+prentarinn gat prentað án þess að þurfa support efni.
+Einnig var prófuð mismunandi veggþykkt til að tryggja
+að símastandurinn yrði nægilega sterkur.
+</p>
+
+<span class="image fit">
+<img src="images/Simaprufa.png" alt="">
+</span>
+
+<p>Prófunarprent fyrir 3D prentun.</p>
+<p>Minni símahaldari hér í
+<a href="https://www.prusa3d.com/page/prusaslicer_424/" target="_blank">Prusa</a>, veggþykkt minnkuð og minni halli. Kom vel út gat farið í að prenta lokamodelið.</p>
+        
+
+</section>
+
+
+<section class="box style1">
+
+<h3>3D prentun</h3>
+
+<p>
+Eftir prófanirnar var símastandurinn prentaður á 3D prentara með PLA
+plasti. Til að prenta símastandinn var módelinu hlaðið inn í
+<a href="https://www.prusa3d.com/page/prusaslicer_424/" target="_blank">PrusaSlicer</a>
+þar sem prentstillingar voru skilgreindar áður en hluturinn
+var sendur í prentun.
+
+<ul>
+<li>Layer height: 0.2 mm</li>
+<li>Infill: 15%</li>
+</ul>
+    
+</p>   
+
+<p>
+Prentunin gekk vel og lokahluturinn kom út eins og gert var
+ráð fyrir í hönnuninni.
+    
+</p>
+
+<p>
+Standurinn heldur símanum stöðugum og gerir notandanum kleift að hafa
+símann sýnilegan á skrifborðinu til dæmis til að horfa á myndbönd eða
+fylgjast með tilkynningum.
+</p>
+
+<span class="image fit">
+<img src="images/Simastandur.jpeg" alt="">
+</span>
+
+<p>Fullprentaður símastandur.</p>
+
+</section>
+
+
+<section class="box style1">
+
+<h3>3D skönnun</h3>
+
+<p>
+Sem hluti af verkefninu framkvæmdi ég einnig 3D skönnun á hlut. Ég notaði 
+<a href="https://poly.cam/" target="_blank">Polycam</a>
+fyrir það.
+Hluturinn sem var skannaður var pill splitter sem er notaður til
+að skipta lyfjatöflum í minni hluta.
+</p>
+
+<p>
+3D skönnun gerir kleift að umbreyta raunverulegum hlut í stafrænt
+3D módel sem síðan er hægt að skoða eða vinna með í CAD hugbúnaði.
+</p>
+
+<span class="image fit">
+<img src="images/3Dskonnun.jpeg" alt="">
+</span>
+
+<p>3D skannað líkan af pill splitter.</p>
+
+</section>
+
+
+<section class="box style1">
+
+<h3>Hvað ég lærði af verkefninu</h3>
+
+<p>
+Í verkefninu lærði ég hvernig 3D prentun virkar í framleiðsluferli
+og hvernig hönnun þarf að taka tillit til takmarkana prentarans
+eins og yfirhangs og veggþykktar.
+</p>
+
+<p>
+Ég lærði einnig hvernig prófanir geta hjálpað til við að ákvarða
+hönnunarreglur áður en lokahlutur er prentaður.
+</p>
+
+<p>
+Að lokum lærði ég hvernig 3D skönnun getur verið notuð til að
+umbreytast raunverulegum hlutum í stafrænt 3D módel sem hægt
+er að vinna með áfram.
+</p>
+
+</section>
+
+
+<section class="box style1">
+
+<h3>Hönnunarskjöl</h3>
+
+<p>
+Hér eru hönnunarskjöl verkefnisins. Fusion 360 skráin inniheldur
+CAD hönnun símastandsins sem var notuð til að búa til
+3D prentunarskrá. Módelið var síðan exportað sem 3MF skrá
+og opnað í slicer hugbúnaði þar sem prentstillingar voru
+skilgreindar áður en hluturinn var sendur í 3D prentun.
+</p>
+
+<ul>
+
+<li>
+<a href="files/Símahaldari done.f3d" target="_blank">
+Fusion 360 hönnunarskrá (.f3d)
+</a>
+</li>
+
+<li>
+<a href="files/Símastandur 3D.3mf" target="_blank">
+3D prentunarskrá (.3mf)
+</a>
+</li>
+
+<li>
+<a href="https://github.com/svavar-dui/tolvustudd-framleidsla" target="_blank">
+GitHub repository verkefnisins
+</a>
+</li>
+
+</ul>
+
+</section>
+
+
+<section class="box style1">
+
+<h3>Heimildir</h3>
+
+<p>
+Við vinnslu verkefnisins studdist ég við nokkrar heimildir til að
+læra betur á hugbúnaðinn sem var notaður við hönnun, undirbúning
+3D prentunar og 3D skönnun.
+</p>
+
+<ul>
+
+<li>
+<a href="https://www.autodesk.com/education/edu-software/fusion" target="_blank">
+Autodesk Fusion 360 – CAD hugbúnaður fyrir 3D hönnun
+</a>
+</li>
+
+<li>
+<a href="https://www.prusa3d.com/page/prusaslicer_424/" target="_blank">
+PrusaSlicer – slicer hugbúnaður fyrir 3D prentun
+</a>
+</li>
+
+<li>
+<a href="https://poly.cam/" target="_blank">
+Polycam – hugbúnaður fyrir 3D skönnun
+</a>
+</li>
+
+<li>
+<a href="https://www.youtube.com/watch?v=XTE0WEPnUZw" target="_blank">
+YouTube – myndband af símastand teiknuðum í Fusion
+</a>
+</li>
+
+<li>
+<a href="https://www.youtube.com/watch?v=HTkwUh3QnQk" target="_blank">
+YouTube – leiðbeiningar að verkefninu
+</a>
+</li>
+    
+<li>
+<a href="https://www.youtube.com/watch?v=Noqzgru1wNY&list=PLGuNTpc293hoXV4QE6y4MAGTWkPRrPBvJ&index=16" target="_blank">
+YouTube – leiðbeiningar um það hvernig á að nota Prusa Slicer
+</a>
+</li>    
+
+</ul>
+
+</section>
+    
 </div>
 </article>
 
