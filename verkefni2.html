@@ -1,73 +1,671 @@
 <!DOCTYPE HTML>
 <html lang="is">
 <head>
-<title>Verkefni 2 – Tölvustudd framleiðsla</title>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" href="assets/css/main.css" />
+  <title>Verkefni 2 – Vínylskurður og parametrísk hönnun</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
 </head>
+<body class="is-preload">
 
-<body>
+  <!-- Nav -->
+  <nav id="nav">
+    <ul class="container">
+      <li><a href="index.html">Heim</a></li>
+      <li><a href="index.html#about">Um mig</a></li>
+      <li><a href="index.html#cv">Ferilskrá</a></li>
+      <li><a href="index.html#process">Verkefni 1</a></li>
+      <li><a href="verkefni2.html">Verkefni 2</a></li>
+      <li><a href="verkefni3.html">Verkefni 3</a></li>
+      <li><a href="lokaverkefni.html">Lokaverkefni</a></li>
+      <li><a href="index.html#github">GitHub</a></li>
+      <li><a href="index.html#sources">Heimildir</a></li>
+    </ul>
+  </nav>
 
-<nav id="nav">
-<ul class="container">
-<li><a href="index.html">Heim</a></li>
-<li><a href="verkefni2.html">Verkefni 2</a></li>
-<li><a href="verkefni3.html">Verkefni 3</a></li>
-<li><a href="lokaverkefni.html">Lokaverkefni</a></li>
+  <!-- Main -->
+  <article class="wrapper style2">
+    <div class="container">
+
+      <header>
+        <h1>Verkefni 2 – Vínylskurður og parametrísk hönnun</h1>
+        <p>
+          Í þessu verkefni vann ég með bæði vínylskurð og parametríska hönnun fyrir
+          geislaskurð. Fyrri hlutinn fólst í að búa til Jeep límmiða með vínylskera og
+          seinni hlutinn fólst í að hanna geirneglt (press-fit) box í Fusion 360 sem var
+          síðan skorið út með geislaskera. Að auki framkvæmdi hópurinn kerf-prófanir fyrir
+          geislaskerann og mældist kerfið 0.1815 mm.
+        </p>
+      </header>
+
+      <!-- Lokaniðurstaða -->
+      <section class="box style1">
+        <h2>Lokaniðurstaða</h2>
+        <p> Hér má sjá lokaniðurstöðurnar úr verkefninu. </p>
+
+        <div class="row aln-center">
+          <div class="col-6 col-12-medium">
+            <span class="image fit">
+              <img src="images/Jeep.jpeg" alt="Jeep límmiði - lokaniðurstaða" />
+            </span>
+          </div>
+
+          <div class="col-6 col-12-medium">
+            <span class="image fit">
+              <img src="images/akrilbox.jpeg" alt="Akrýl box - lokaniðurstaða" />
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Verkefnalýsing -->
+      <section class="box style1">
+        <h2>Verkefnalýsing</h2>
+        <p>
+          Verkefnið skiptist í þrjá meginhluta:
+        </p>
+        <ul>
+          <li>Að nota vínylskera til að búa til eitthvað.</li>
+          <li>Að hanna parametrískt, geirneglt módel sem er skalanlegt.</li>
+          <li>Að framkvæma kerf-prófanir á geislaskera og skjalfesta niðurstöður.</li>
+        </ul>
+
+        <p>
+          Í mínu tilfelli valdi ég að gera Jeep límmiða í vínylskurðinum og box úr glæru
+          akrýli í parametríska hlutanum.
+        </p>
+      </section>
+
+      <!-- Vínylskurður -->
+      <section class="box style1">
+        <h2>1. Vínylskurður</h2>
+
+        <h3>Hugmynd og undirbúningur</h3>
+       <p>
+           Í fyrri hluta verkefnisins var markmiðið að búa til hlut með vínylskera. Ég vildi fyrst skera út logo 
+           Háskóla Íslands en þegar komið var inn í VR-III áttaði ég mig á því að það ytði of flókið.
+           Ég ákvað að gera límmiða með Jeep merkinu. Hugmyndin var að gera einfaldan límmiða sem hentar vel
+           fyrir vínylskurð þar sem merkið er með skýrar línur og einfalt form.
+       </p>
+
+          <p>
+              Ég fann Jeep merkið á vefsíðu sem býður upp á SVG skrár og sótti það þaðan. SVG snið
+              hentar sérstaklega vel fyrir vínylskurð þar sem það er vektorform sem hægt er að skala
+              án þess að tapa gæðum.
+          </p>
+
+
+         <p>
+             Skráin var opnuð í forritinu Inkscape þar sem hönnunin var undirbúin fyrir
+             skurð. Þar var opnað <em>Fill and Stroke</em> gluggann og fyllingin fjarlægð
+             með því að stilla <strong>No Fill</strong>. Línurnar voru síðan stilltar á
+             <strong>Flat Color</strong> og línuþykktin stillt á <strong>0.02 mm</strong>
+             til að tryggja að vélin fylgdi réttum skurðlínum.
+        </p>
+
+          <p>
+            Þegar hönnunin hafði verið undirbúin var hún exportuð sem <strong>PDF</strong>
+              skrá. Skráin var síðan sett á USB kubb og flutt yfir í tölvuna sem tengd er
+              við vínylskurðarvélina.
+          </p>
+
+
+        <h3>Framkvæmd</h3>
+        <p>
+          Leiðbeinandi aðstoðaði við að stilla upp vínylskurðarvélinni og senda
+            skrána í skurð. Þegar skurðurinn var búinn var umframefni fjarlægt úr
+            vínylnum áður en límmiðinn var fluttur með transfer filmu yfir á
+            lokayfirborð.
+        </p>        
+        <p>
+        Mynd af fullkláruðum límmiða má sjá hér efst á síðunni
+        </p>
+          
+    </section>
+        
+        
+      <!-- Parametrísk hönnun -->
+      <section class="box style1">
+        <h2>2. Parametrísk hönnun</h2>
+
+    <h3>Hugmyndavinna</h3>
+            <p>
+                Í upphafi hugmyndavinnunnar skoðaði ég nokkra mismunandi möguleika fyrir
+                parametríska verkefnið. Fyrsta hugmyndin mín var að hanna símastand fyrir
+                símann minn þar sem slíkur hlutur gæti verið nytsamlegur á skrifborðinu.
+          </p>
+
+          <p>
+              Eftir að hafa skoðað verkefnið betur áttaði ég mig þó á því að símastandur
+              myndi líklega henta betur sem verkefni fyrir 3D prentun, þar sem slík
+              hönnun inniheldur oft sveigjur og þrívíð form sem eru auðveldari að
+              framleiða með 3D prentara heldur en með geislaskera.
+          </p>
+
+          <p>
+              Því ákvað ég að breyta hugmyndinni og hanna í staðinn box sem hægt væri
+              að nota til að geyma snyrtivörur. Eins og staðan er núna standa þær
+              einfaldlega uppi á hillum og í skúffum í herberginu mínu og því væri
+              þægilegt að hafa skipulagðan kassa til að halda þeim saman á einum stað.
+          </p>
+
+          <p>
+              Slík hönnun hentar einnig vel fyrir geislaskurð þar sem box er hægt að
+              byggja upp úr flötum plötum sem skornar eru út og síðan settar saman með
+              press-fit tengingum.
+          </p>
+          
+        <p>
+            Við hönnun og undirbúning á boxinu studdist ég einnig við
+            <a href="https://www.youtube.com/watch?v=yhHhSVoL1RQ" target="_blank">kennslumyndband 1</a>
+            og
+            <a href="https://www.youtube.com/watch?v=9U2JPfkQpsE" target="_blank">kennslumyndband 2</a>,
+            sem hjálpuðu mér að skilja betur hvernig parametrísk hönnun og undirbúningur
+            fyrir framleiðslu með geislaskurði virkar í framkvæmd.
+          </p>  
+
+        <h3>Parametrar</h3>
+        <p>
+          Hönnunin var gerð parametrísk í Autodesk Fusion 360. Það þýðir að stærðum var
+          stýrt með breytum sem hægt er að breyta síðar án þess að teikna allt upp á nýtt.
+        </p>
+
+        <h3>Parametrísk hönnun</h3>
+
+          <p>
+              Til að gera hönnunina sveigjanlega og auðvelda breytingar á stærð
+              boxsins var notuð parametrísk hönnun í Autodesk Fusion 360. Með
+              parametrískri hönnun er hægt að skilgreina stærðir hlutarins sem
+              breytur (parameters) sem síðan stjórna öllum stærðum í módelinu.
+              Þannig er hægt að breyta stærð kassans eða efnisþykkt án þess að
+              þurfa að teikna módelið upp aftur.
+          </p>
+
+          <p>
+              Í verkefninu skilgreindi ég nokkra user parameters sem stjórna
+              helstu stærðum kassans og samsetningu hans.
+          </p>
+
+          <ul>
+              <li><strong>Board_T</strong> – þykkt efnisins sem notað er í boxið (6 mm).</li>
+              <li><strong>Box_W</strong> – breidd kassans (200 mm).</li>
+              <li><strong>Box_D</strong> – dýpt kassans (150 mm).</li>
+              <li><strong>Box_H</strong> – hæð kassans (100 mm).</li>
+              <li><strong>Slot_CW</strong> – fjöldi geirneglda (press-fit) festinga á breidd.</li>
+              <li><strong>Slot_CD</strong> – fjöldi festinga á dýpt.</li>
+              <li><strong>Slot_CH</strong> – fjöldi festinga á hæð.</li>
+          </ul>
+
+          <p>
+              Stærð festinganna sjálfra var síðan reiknuð sjálfkrafa út frá
+              stærð boxsins og fjölda festinga. Þetta var gert með
+              reikniformúlum í parametrunum.
+          </p>
+
+          <ul>
+              <li><strong>Slot_LW</strong> = Box_W / (Slot_CW * 2 + 1)</li>
+              <li><strong>Slot_LD</strong> = Box_D / (Slot_CD * 2 + 1)</li>
+              <li><strong>Slot_LH</strong> = Box_H / (Slot_CH * 2 + 1)</li>
+          </ul>
+
+          <p>
+              Þessar formúlur tryggja að festingarnar dreifast jafnt yfir
+              kantana á boxinu óháð stærð þess. Ef stærð boxsins eða fjöldi
+              festinga er breytt uppfærist hönnunin sjálfkrafa.
+          </p> 
+
+        <span class="image fit">
+          <img src="images/Parametrar.png" alt="Parametrar í Fusion 360" />
+        </span>
+
+        <h3>Prófanir á parametrum</h3>
+        <p>
+          Ég prófaði að minnka boxið töluvert til þess að sjá hvort að allar parametrarnir
+            myndu haga sér rétt
+        </p>
+
+        <span class="image fit">
+          <img src="images/Parametratest.png" alt="Prófun á parametrískri hönnun" />
+        </span>
+
+        <p>
+          Kom í ljós að allt passaði fullkomlega svo parametrarnir gengu upp
+        </p> 
+          
+        </section>  
+
+      <!-- Hönnun í Fusion -->
+      <section class="box style1">
+        <h2>3. Hönnun í Fusion 360</h2>
+
+        <h3>Press-fit tengingar</h3>
+
+          <p>
+              Til að setja boxið saman voru notaðar geirnegldar festingar
+              (press-fit joints). Þær eru byggðar upp með svokölluðum
+              finger joints þar sem tennur á einni plötu passa inn í
+              raufar á annarri plötu.
+          </p>
+
+          <p>
+              Í þessari hönnun eru festingarnar parametrískar og fjöldi
+              þeirra er skilgreindur með breytum í Fusion 360.
+          </p>
+
+          <ul>
+              <li><strong>Slot_CW = 4</strong> festingar á breidd.</li>
+              <li><strong>Slot_CD = 3</strong> festingar á dýpt.</li>
+              <li><strong>Slot_CH = 2</strong> festingar á hæð.</li>
+          </ul>
+
+          <p>
+              Með þessari uppsetningu dreifast festingarnar jafnt yfir
+              kantana á boxinu og halda hlutunum stöðugum þegar þeir
+              eru settir saman.
+          </p>
+
+          <p>
+              Þar sem fjöldi festinga er skilgreindur með parametrum
+              er auðvelt að breyta hönnuninni þannig að fleiri eða
+              færri festingar séu notaðar eftir stærð boxsins.
+          </p>  
+
+         <p>
+             Hönnunin samanstendur af botnplötu og fjórum hliðarplötum.
+             Botnplatan er einföld flöt plata sem inniheldur raufar þar
+             sem hliðarnar passa niður í. Breidd og dýpt botnsins eru
+             stjórnuð af parametrunum <strong>Box_W</strong> og
+             <strong>Box_D</strong>.
+          </p>
+        
+        <p>
+            Hliðarplöturnar eru einnig flatar og hafa tennur
+            (finger joints) sem passa inn í raufarnar á botninum.
+            Hæð hliðanna er stjórnuð af parametranum
+            <strong>Box_H</strong>.
+        </p>  
+          
+        <p>
+            Sama gerð af festingu var notuð á öllum köntum
+            boxsins til að halda hönnuninni einfaldri og
+            stöðugri. Fjöldi festinga á hverjum kanti er
+            stjórnað með parametrunum <strong>Slot_CW</strong>,
+            <strong>Slot_CD</strong> og <strong>Slot_CH</strong>.
+          </p>
+
+          <p>
+              Stærð festinganna er síðan reiknuð sjálfkrafa út
+              frá stærð boxsins með formúlum í parametrunum,
+              sem tryggir að festingarnar dreifast jafnt yfir
+              kantana óháð stærð boxsins.
+          </p>  
+          
+        <div class="row aln-center">
+          <div class="col-6 col-12-medium">
+            <span class="image fit">
+              <img src="images/Fusionmodel.png" alt="Fusion 360 módel af boxi" />
+            </span>
+            <p> Mynd af 3D módeli í Fusion 360.</p>
+          </div>
+
+        <h3>Vandamál sem komu upp í hönnun</h3>
+<h3>Áskoranir og lausnir</h3>
+
+            <p>
+                Eitt af fyrstu vandamálunum sem kom upp í verkefninu var að ég
+                byrjaði á því að reyna að hanna símastand fyrir símann minn.
+                Eftir að hafa byrjað á þeirri hönnun áttaði ég mig á því að
+                símastandur er frekar flókið form fyrir geislaskurð þar sem
+                slíkar hannanir innihalda oft sveigjur og þrívíð form sem
+                henta betur fyrir 3D prentun.
+            </p>
+
+            <p>
+                Því ákvað ég að breyta hugmyndinni og hanna í staðinn box
+                fyrir snyrtivörur. Sú hönnun hentar betur fyrir geislaskurð
+                þar sem box er hægt að byggja upp úr flötum plötum sem síðan
+                eru settar saman með press-fit tengingum.
+            </p>
+
+            <p>
+                Önnur áskorun í verkefninu var að ganga úr skugga um að
+                parametrarnir í Fusion 360 virkuðu rétt. Þar sem hönnunin
+                var parametrísk þurfti að passa að stærðir eins og breidd,
+                dýpt og hæð uppfærðust rétt þegar parametrunum var breytt.
+            </p>
+
+            <p>
+                Einnig þurfti að ganga úr skugga um að festingarnar
+                (finger joints) dreifðust jafnt yfir kantana á boxinu.
+                Þetta var leyst með því að nota formúlur í parametrunum
+                sem reikna sjálfkrafa út stærð festinganna út frá stærð
+                boxsins og fjölda þeirra.
+            </p>
+      </section>
+
+      <!-- Kerf -->
+      <section class="box style1">
+        <h2>4. Hópaverkefni – Kerf prófanir</h2>
+
+        <p>
+          Sem hluta af verkefninu framkvæmdi hópurinn kerf-prófanir á geislaskeranum.
+          Kerf er sú breidd efnis sem tapast þegar laserinn sker og það skiptir miklu máli
+          þegar verið er að hanna press-fit tengingar. Í Kerf-prófuninni hjá okkur skárum við 10 litla 
+          kassa og mældum síðan bilið á milli.
+        </p>
+
+        <p>
+          Við framkvæmdum prófanir með því að skera út prófunarstykki og bera saman teiknaða
+          stærð við raunverulegar mælingar eftir skurð.
+        </p>
+
+        <p>
+          Við notuðum skífmál til þess að mæla bilið á milli
+        </p>
+          
+        <p>
+          <strong>Niðurstaða:</strong> kerf mældist <strong>0.1815 mm</strong>.
+        </p>
+
+        <h3>Hvernig kerfið var notað í hönnuninni</h3>
+        <p>
+            Við að setja upp kerf fyrir hönnunina studdist ég við leiðbeiningar úr
+            myndbandi á <a href="https://www.youtube.com/watch?v=D1Btaqhog9E" target="_blank">YouTube</a>
+            sem útskýrir hvernig hægt er að taka tillit til kerf í parametrískri
+            hönnun fyrir geislaskurð.
+        </p>
+      </section>
+
+      <!-- Framleiðsla -->
+      <section class="box style1">
+        <h2>5. Geislaskurður og framleiðsla</h2>
+
+        <p>
+          Eftir að hönnunin var tilbúin og kerf-prófanir höfðu verið framkvæmdar voru partarnir
+          skornir út í geislaskera. Efnið sem ég notaði var glær akrýlplata.
+        </p>
+
+       <h3>Undirbúningur fyrir geislaskurð</h3>
+
+          <p>
+              Þegar hönnunin á boxinu var tilbúin í Fusion 360 þurfti að undirbúa
+              skrána fyrir geislaskurð. Fyrsta skrefið var að flytja teikninguna
+              úr Fusion yfir í DXF skrá sem geislaskerinn getur lesið.
+          </p>
+
+          <p>
+              Til þess var búið til sketch af hverri plötu og það síðan exportað
+              sem DXF skrá. DXF sniðið er algengt í geislaskurði þar sem það
+              inniheldur aðeins línur sem vélin getur fylgt við skurðinn.
+          </p>
+
+          <p>
+              Þegar DXF skráin var tilbúin var hún opnuð í hugbúnaði sem notaður
+              er með geislaskeranum þar sem skráin var undirbúin fyrir skurð.
+              Þar var einnig athugað að allar línur væru réttar skurðlínur og
+              að stærðirnar væru eins og áætlað var í hönnuninni. Sömu skref voru framin og í vínylskurðinum
+              til þess að undirbæua hana fyrir skurð 
+          </p>
+
+          <p>
+              Partarnir voru síðan lagðir út á efnisplötuna þannig að þeir nýttu
+              plássið sem best. Þetta er gert til að spara efni og tryggja að allir
+              hlutarnir passi á plötuna sem er sett í geislaskerann.
+          </p>
+
+          <p>
+            Þegar allt var tilbúið var skráin send í geislaskurð og hlutarnir
+              skornir út. Í fyrstu tilraun skárust aðeins tveir hlutir rétt út
+              og því þurfti að skera hina hlutina aftur. Þar sem platan hafði
+              þá þegar verið notuð einu sinni urðu sumir hlutanna aðeins
+              lausari í samsetningu en upphaflega var gert ráð fyrir.
+          </p>
+
+          <p>
+              Þrátt fyrir það var hægt að setja boxið saman og sjá að
+              parametríska hönnunin og press-fit festingarnar virkuðu eins
+              og til var ætlast.
+          </p>
+
+        <span class="image fit">
+          <img src="images/Skornirpartar.jpeg" alt="Skornir partar fyrir box" />
+        </span>
+        <p> skornir partar eftir geislaskurð.</p>
+
+       <h3>Dæmi um áskorun í framleiðslu</h3>
+
+          <p>
+              Ein áskorun sem kom upp í framleiðsluferlinu var að ekki allir
+              hlutir skárust rétt út í fyrstu tilraun þegar geislaskerinn
+              var notaður. Aðeins tveir hlutir komu rétt út í fyrstu og því
+              þurfti að skera hina hlutina aftur.
+          </p>
+
+          <p>
+              Þar sem efnisplatan hafði þá þegar verið notuð einu sinni
+              urðu sumir hlutanna aðeins lausari í samsetningu en upphaflega
+              var gert ráð fyrir. Þrátt fyrir það var hægt að setja boxið
+              saman og sjá að hönnunin og press-fit tengingarnar virkuðu
+              eins og til var ætlast.
+          </p>
+        </section>  
+
+      <!-- Samsetning -->
+      <section class="box style1">
+        <h2>6. Samsetning</h2>
+
+        <p>
+          Eftir skurðinn voru partarnir settir saman í box. Samsetningin byggði á finger joints
+          og markmiðið var að hlutarnir næðu að smellpassa saman með press-fit tengingum.
+        </p>
+
+        <span class="image fit">
+          <img src="images/Box.jpeg" alt="Samsett akrýl box" />
+        </span>
+
+          <p>
+              Samsetningin gekk mjög vel og þurfti ekki að gera neinar
+              breytingar á hlutunum. Tennurnar í festingunum pössuðu
+              vel saman og hlutarnir smellpössuðu í raufarnar eins og
+              gert var ráð fyrir í hönnuninni.
+          </p>
+
+          <p>
+              Þetta sýndi að parametrarnir og stærðir festinganna í
+              Fusion 360 höfðu verið rétt stilltar og að hönnunin
+              hentaði vel fyrir framleiðslu með geislaskurði.
+          </p>
+        </section>
+          
+          
+      <!-- Mat og umræða -->
+      <section class="box style1">
+        <h2>7. Mat á niðurstöðu</h2>
+          
+        <h3>Niðurstöður og lærdómur</h3>
+          
+        <p>
+          Ég er ánægður með niðurstöðuna úr verkefninu. Verkefnið hjálpaði mér að skilja betur
+          hvernig parametrísk hönnun virkar, hvernig kerf hefur áhrif á press-fit samsetningar
+          og hvernig stafrænt módel er fært alla leið yfir í framleiddan hlut.
+        </p>
+
+          <p>
+              Verkefnið gekk í heildina mjög vel og lokaniðurstaðan var box
+              sem uppfyllti markmið verkefnisins. Parametríska hönnunin
+              virkaði eins og til var ætlast og press-fit tengingarnar
+              gerðu það að verkum að hlutarnir smellpössuðu saman án
+              þess að nota skrúfur eða lím.
+          </p>
+
+          <h4>Hvað tókst vel</h4>
+
+          <p>
+        Hönnunin í Fusion 360 gekk vel og parametrarnir gerðu það
+              auðvelt að stjórna stærð boxsins og fjölda festinga.
+              Samsetningin gekk einnig mjög vel þar sem allir hlutir
+              pössuðu saman og boxið var stöðugt eftir samsetningu.
+          </p>
+
+          <h4>Hvað hefði mátt gera betur</h4>
+
+          <p>
+        Áður en allir hlutirnir voru skornir út framkvæmdi ég
+        prufuskeru til að ganga úr skugga um að stærðir og
+              press-fit tengingarnar virkuðu rétt. Prufuskeran
+              virkaði vel og sýndi að hönnunin var rétt uppsett.
+          </p>
+
+          <p>
+              Þegar allir hlutirnir voru síðan skornir út kom þó
+              upp smá vandamál þar sem ekki allir hlutir skárust
+              rétt út í fyrstu tilraun og þurfti því að skera
+              sum þeirra aftur. Þetta leiddi til þess að sumar
+              plöturnar urðu aðeins lausari í samsetningu en
+              upphaflega var gert ráð fyrir.
+          </p>
+
+          <p>
+              Þrátt fyrir það var hægt að setja boxið saman
+            án vandræða og hönnunin virkaði vel í heildina.
+        </p>
+
+          <h4>Hvað ég lærði af verkefninu</h4>
+
+          <p>
+              Í verkefninu lærði ég hvernig parametrísk hönnun virkar
+              í Fusion 360 og hvernig hægt er að nota breytur til að
+              stjórna stærð og uppbyggingu módelanna. Ég lærði einnig
+              meira um hvernig geislaskurður virkar og hversu mikilvægt
+              er að taka tillit til þátta eins og kerf þegar verið er
+              að hanna press-fit tengingar.
+          </p>
+
+          <h4>Hvernig ég myndi þróa boxið áfram</h4>
+
+          <p>
+              Ef ég myndi þróa hönnunina áfram myndi ég líklega bæta
+              við fleiri hólfum inni í boxinu til að skipuleggja
+              snyrtivörurnar betur. Einnig væri hægt að bæta við loki
+              eða breyta stærð boxsins með því að stilla parametrana
+              til að laga það að mismunandi notkun.
+          </p>
+          
+        </section>  
+
+      <!-- Hönnunarskjöl -->
+      <section class="box style1">
+        <h2>8. Hönnunarskjöl</h2>
+
+          <p>
+              Hér eru hönnunarskjöl verkefnisins. Fusion 360 skráin inniheldur
+              parametríska módelið af boxinu, DXF skráin var notuð fyrir
+              geislaskurð og SVG skráin inniheldur Jeep merkið sem var notað
+              fyrir vínylskurðinn.
+          </p>
+
+          <ul>
+
+              <li>
+                  <a href="files/Box_fyrir_geislaskurd.f3d" target="_blank">
+                      Fusion 360 hönnunarskrá (.f3d)
+                  </a>
+              </li>
+
+              <li>
+                  <a href="files/box_laser_cut.dxf" target="_blank">
+                      DXF skrá fyrir geislaskurð (.dxf)
+                  </a>
+              </li>
+
+              <li>
+                  <a href="files/jeep-7.svg" target="_blank">
+                      Jeep límmiða hönnun (.svg)
+                  </a>
+              </li>
+
+              <li>
+                  <a href="https://github.com/svavar-dui/tolvustudd-framleidsla" target="_blank">
+                      GitHub repository verkefnisins
+                  </a>
+              </li>
+
+          </ul>
+          
+      </section>
+
+      <!-- Heimildir -->
+      <section class="box style1">
+        <h2>9. Heimildir og innblástur</h2>
+
+            <p>
+                Við vinnslu verkefnisins studdist ég við nokkrar mismunandi heimildir
+                til að læra betur á hugbúnaðinn og framleiðsluferlið. Þar á meðal
+                voru kennslumyndbönd á YouTube sem sýndu hvernig vinna má með
+                parametríska hönnun, geislaskurð og uppsetningu á kerf.
+          </p>
+
+          <ul>
+
+              <li>
+                  <a href="https://www.youtube.com/watch?v=gMLuEtXef8s" target="_blank">
+                      YouTube – Kynning á verkefninu
+                  </a>
+              </li>
+
+              <li>
+                  <a href="https://www.youtube.com/watch?v=USVU4J5Al-s&t=174s" target="_blank">
+                      YouTube – Parametric design tutorial
+                  </a>
+              </li>
+
+              <li>
+                  <a href="https://www.youtube.com/watch?v=yhHhSVoL1RQ&t=2s" target="_blank">
+                      YouTube – Parametric kassi
+                  </a>
+              </li>
+
+              <li>
+                  <a href="https://www.youtube.com/watch?v=9U2JPfkQpsE" target="_blank">
+                      YouTube – Annar Parametric kassi
+                  </a>
+              </li>
+
+              <li>
+                  <a href="https://www.youtube.com/watch?v=D1Btaqhog9E" target="_blank">
+                      YouTube – Kerf explanation for laser cutting
+                  </a>
+              </li>
+
+              <li>
+                  <a href="https://www.autodesk.com/education/edu-software/fusion" target="_blank">
+                      Autodesk Fusion 360 – Student version
+                  </a>
+              </li>
+
+              <li>
+                  <a href="https://inkscape.org/" target="_blank">
+                      Inkscape – Vector graphics editor
+                  </a>
+              </li>
+
 </ul>
-</nav>
+      </section>
 
-<article class="wrapper style2">
-<div class="container">
+      <footer>
+        <a href="verkefni3.html" class="button large">Áfram í Verkefni 3</a>
+      </footer>
 
-<header>
-<h1>Verkefni 2</h1>
-<p>Hér mun ég skrásetja vinnuferlið fyrir verkefni 2.</p>
-</header>
+    </div>
+  </article>
 
-<h3>Verkefnalýsing</h3>
-
-<p>
-Verkefnið fólst í að:
-</p>
-
-<ul>
-<li>Búa til límmiða með vínylskera.</li>
-<li>Hanna parametrískt módel sem er geirneglt (press-fit).</li>
-<li>Módelið þarf að vera skalanlegt með parametrum.</li>
-<li>Skera módelið út með geislaskurði.</li>
-<li>Skjalfesta vinnuferlið á vefsíðu.</li>
-</ul>
-
-<p>
-Í fyrri hluta verkefnisins notaði ég vínilskera til að búa til
-límmiða. Ég ákvað að gera Jeep límmiða.
-</p>
-
-<p>
-Fyrst var grafíkin undirbúin í vektorformi og síðan send í
-vínilskurðarvélina. Þegar skurðurinn var búinn var
-umframefni fjarlægt og límmiðinn fluttur með transfer filmu
-yfir á yfirborð.
-</p>   
-    
-<h3>Parametrísk hönnun</h3>
-
-<p>
-Í seinni hluta verkefnisins hannaði ég box fyrir snyrtivörur sem 
-ætlað er til framleiðslu með geislaskurði. Hönnunin var gerð í Autodesk
-Fusion 360 og byggð upp með parametrískri hönnun.
-</p>
-
-<p>
-Parametrísk hönnun þýðir að stærðir hlutarins eru skilgreindar
-með breytum (parameters) sem hægt er að breyta auðveldlega.
-</p>    
-    
-    
-</div>
-</article>
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
 
 </body>
 </html>
